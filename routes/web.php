@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/CheckAPI', function () {
+    return view('CheckAPI.API');
+});
+
+Route::get('/get_detail', 'AppController@get_detail');
+
 Route::get('/', function () {
     return view('welcome');
 });
